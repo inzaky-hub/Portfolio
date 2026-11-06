@@ -1,0 +1,379 @@
+{
+  "pbtResults": {},
+  "executionHistory": {
+    "16.1 Write property test for `profileValidator` (Property 2)": [
+      {
+        "executionId": "f236b089-05d8-4b34-8102-b932606e088f",
+        "chatSessionId": "sess_216a33b1-17eb-428b-a3bd-1774b7a12e3b",
+        "timestamp": 1793981944098
+      }
+    ],
+    "16. Property-based tests with fast-check": [
+      {
+        "executionId": "f236b089-05d8-4b34-8102-b932606e088f",
+        "chatSessionId": "sess_216a33b1-17eb-428b-a3bd-1774b7a12e3b",
+        "timestamp": 1793981944270
+      }
+    ],
+    "17.3 Unit tests — Missions and AskInza pages": [
+      {
+        "executionId": "f236b089-05d8-4b34-8102-b932606e088f",
+        "chatSessionId": "sess_216a33b1-17eb-428b-a3bd-1774b7a12e3b",
+        "timestamp": 1793981948738
+      }
+    ],
+    "17.4 Unit tests — QuickReadMode, EchoCenter, and language toggle": [
+      {
+        "executionId": "f236b089-05d8-4b34-8102-b932606e088f",
+        "chatSessionId": "sess_216a33b1-17eb-428b-a3bd-1774b7a12e3b",
+        "timestamp": 1793981952073
+      }
+    ],
+    "17.5 Integration tests — animations and language switching": [
+      {
+        "executionId": "f236b089-05d8-4b34-8102-b932606e088f",
+        "chatSessionId": "sess_216a33b1-17eb-428b-a3bd-1774b7a12e3b",
+        "timestamp": 1793981955109
+      }
+    ],
+    "1.1 Initialise Vite + React + TypeScript project, install all dependencies": [
+      {
+        "executionId": "f236b089-05d8-4b34-8102-b932606e088f",
+        "chatSessionId": "sess_216a33b1-17eb-428b-a3bd-1774b7a12e3b",
+        "timestamp": 1793981961801
+      },
+      {
+        "executionId": "f236b089-05d8-4b34-8102-b932606e088f",
+        "chatSessionId": "sess_216a33b1-17eb-428b-a3bd-1774b7a12e3b",
+        "timestamp": 1793984185697
+      }
+    ],
+    "1.2 Create the full `src/` directory structure and placeholder index files": [
+      {
+        "executionId": "0e170d65-fc38-47b3-a239-de29276413bd",
+        "chatSessionId": "sess_216a33b1-17eb-428b-a3bd-1774b7a12e3b",
+        "timestamp": 1793984501314
+      },
+      {
+        "executionId": "0e170d65-fc38-47b3-a239-de29276413bd",
+        "chatSessionId": "sess_216a33b1-17eb-428b-a3bd-1774b7a12e3b",
+        "timestamp": 1793984546637
+      }
+    ],
+    "1. Project scaffolding and tooling setup": [
+      {
+        "executionId": "0e170d65-fc38-47b3-a239-de29276413bd",
+        "chatSessionId": "sess_216a33b1-17eb-428b-a3bd-1774b7a12e3b",
+        "timestamp": 1793984546755
+      }
+    ],
+    "2.1 Define TypeScript type definitions in `src/types/profile.ts`": [
+      {
+        "executionId": "9eda740c-1f16-4116-bf34-e48cfbf6b75b",
+        "chatSessionId": "sess_216a33b1-17eb-428b-a3bd-1774b7a12e3b",
+        "timestamp": 1793984779245
+      },
+      {
+        "executionId": "9eda740c-1f16-4116-bf34-e48cfbf6b75b",
+        "chatSessionId": "sess_216a33b1-17eb-428b-a3bd-1774b7a12e3b",
+        "timestamp": 1793984805651
+      }
+    ],
+    "2.2 Implement `src/utils/profileValidator.ts`": [
+      {
+        "executionId": "f730db6a-adeb-429b-b36c-0ce4b3f7c5e3",
+        "chatSessionId": "sess_216a33b1-17eb-428b-a3bd-1774b7a12e3b",
+        "timestamp": 1793984850918
+      },
+      {
+        "executionId": "f730db6a-adeb-429b-b36c-0ce4b3f7c5e3",
+        "chatSessionId": "sess_216a33b1-17eb-428b-a3bd-1774b7a12e3b",
+        "timestamp": 1793984882262
+      }
+    ],
+    "2.3 Implement `src/hooks/useProfileData.ts`": [
+      {
+        "executionId": "686a200d-7271-4cd2-85c1-2398d7fca3e1",
+        "chatSessionId": "sess_216a33b1-17eb-428b-a3bd-1774b7a12e3b",
+        "timestamp": 1793984921780
+      },
+      {
+        "executionId": "686a200d-7271-4cd2-85c1-2398d7fca3e1",
+        "chatSessionId": "sess_216a33b1-17eb-428b-a3bd-1774b7a12e3b",
+        "timestamp": 1793984953102
+      }
+    ],
+    "2.4 Copy `profil.json` into `public/profil.json` (already present; verify it matches `ProfileData` types)": [
+      {
+        "executionId": "8c4a0b40-91b0-47d9-88fa-56fbf4981869",
+        "chatSessionId": "sess_216a33b1-17eb-428b-a3bd-1774b7a12e3b",
+        "timestamp": 1793985024313
+      },
+      {
+        "executionId": "8c4a0b40-91b0-47d9-88fa-56fbf4981869",
+        "chatSessionId": "sess_216a33b1-17eb-428b-a3bd-1774b7a12e3b",
+        "timestamp": 1793985035144
+      }
+    ],
+    "2. Data layer — types, validation, and data hook": [
+      {
+        "executionId": "8c4a0b40-91b0-47d9-88fa-56fbf4981869",
+        "chatSessionId": "sess_216a33b1-17eb-428b-a3bd-1774b7a12e3b",
+        "timestamp": 1793985035266
+      }
+    ],
+    "3.1 Implement `src/i18n/ui.ts` with all static UI strings": [
+      {
+        "executionId": "976a7194-6ea3-4abc-91b4-c43da8e6d467",
+        "chatSessionId": "sess_216a33b1-17eb-428b-a3bd-1774b7a12e3b",
+        "timestamp": 1793985084178
+      },
+      {
+        "executionId": "976a7194-6ea3-4abc-91b4-c43da8e6d467",
+        "chatSessionId": "sess_216a33b1-17eb-428b-a3bd-1774b7a12e3b",
+        "timestamp": 1793985142370
+      }
+    ],
+    "3.2 Implement `src/hooks/useTranslation.ts`": [
+      {
+        "executionId": "976a7194-6ea3-4abc-91b4-c43da8e6d467",
+        "chatSessionId": "sess_216a33b1-17eb-428b-a3bd-1774b7a12e3b",
+        "timestamp": 1793985092085
+      },
+      {
+        "executionId": "976a7194-6ea3-4abc-91b4-c43da8e6d467",
+        "chatSessionId": "sess_216a33b1-17eb-428b-a3bd-1774b7a12e3b",
+        "timestamp": 1793985145516
+      }
+    ],
+    "3. i18n foundation": [
+      {
+        "executionId": "976a7194-6ea3-4abc-91b4-c43da8e6d467",
+        "chatSessionId": "sess_216a33b1-17eb-428b-a3bd-1774b7a12e3b",
+        "timestamp": 1793985145577
+      }
+    ],
+    "4.1 Implement `src/context/AppContext.tsx`": [
+      {
+        "executionId": "542b7d7d-a10b-4817-9556-152815a25954",
+        "chatSessionId": "sess_216a33b1-17eb-428b-a3bd-1774b7a12e3b",
+        "timestamp": 1793985177003
+      },
+      {
+        "executionId": "542b7d7d-a10b-4817-9556-152815a25954",
+        "chatSessionId": "sess_216a33b1-17eb-428b-a3bd-1774b7a12e3b",
+        "timestamp": 1793985572446
+      }
+    ],
+    "4.2 Implement `src/App.tsx` routing shell and `src/main.tsx` entry point": [
+      {
+        "executionId": "542b7d7d-a10b-4817-9556-152815a25954",
+        "chatSessionId": "sess_216a33b1-17eb-428b-a3bd-1774b7a12e3b",
+        "timestamp": 1793985180179
+      },
+      {
+        "executionId": "542b7d7d-a10b-4817-9556-152815a25954",
+        "chatSessionId": "sess_216a33b1-17eb-428b-a3bd-1774b7a12e3b",
+        "timestamp": 1793985575707
+      }
+    ],
+    "4. AppContext and application shell": [
+      {
+        "executionId": "542b7d7d-a10b-4817-9556-152815a25954",
+        "chatSessionId": "sess_216a33b1-17eb-428b-a3bd-1774b7a12e3b",
+        "timestamp": 1793985575787
+      }
+    ],
+    "5.1 Implement `src/components/QuickReadToggle/index.tsx`": [
+      {
+        "executionId": "4d18825e-bde2-4513-b802-0e00591b7463",
+        "chatSessionId": "sess_216a33b1-17eb-428b-a3bd-1774b7a12e3b",
+        "timestamp": 1793985639549
+      },
+      {
+        "executionId": "4d18825e-bde2-4513-b802-0e00591b7463",
+        "chatSessionId": "sess_216a33b1-17eb-428b-a3bd-1774b7a12e3b",
+        "timestamp": 1793985713681
+      }
+    ],
+    "6.1 Implement `src/components/BookCover/index.tsx` (static, no animation)": [
+      {
+        "executionId": "4d18825e-bde2-4513-b802-0e00591b7463",
+        "chatSessionId": "sess_216a33b1-17eb-428b-a3bd-1774b7a12e3b",
+        "timestamp": 1793985642840
+      },
+      {
+        "executionId": "4d18825e-bde2-4513-b802-0e00591b7463",
+        "chatSessionId": "sess_216a33b1-17eb-428b-a3bd-1774b7a12e3b",
+        "timestamp": 1793985717052
+      }
+    ],
+    "6.2 Implement `src/pages/Cover/index.tsx`": [
+      {
+        "executionId": "4d18825e-bde2-4513-b802-0e00591b7463",
+        "chatSessionId": "sess_216a33b1-17eb-428b-a3bd-1774b7a12e3b",
+        "timestamp": 1793985645974
+      },
+      {
+        "executionId": "4d18825e-bde2-4513-b802-0e00591b7463",
+        "chatSessionId": "sess_216a33b1-17eb-428b-a3bd-1774b7a12e3b",
+        "timestamp": 1793985720348
+      }
+    ],
+    "5. QuickReadToggle component": [
+      {
+        "executionId": "4d18825e-bde2-4513-b802-0e00591b7463",
+        "chatSessionId": "sess_216a33b1-17eb-428b-a3bd-1774b7a12e3b",
+        "timestamp": 1793985713754
+      }
+    ],
+    "6. Cover page — static BookCover component": [
+      {
+        "executionId": "4d18825e-bde2-4513-b802-0e00591b7463",
+        "chatSessionId": "sess_216a33b1-17eb-428b-a3bd-1774b7a12e3b",
+        "timestamp": 1793985720402
+      }
+    ],
+    "7.1 Implement `src/components/ServerRackViz/index.tsx` (static, no animation)": [
+      {
+        "executionId": "83c103f0-8291-4abf-9256-644ddea84ad7",
+        "chatSessionId": "sess_216a33b1-17eb-428b-a3bd-1774b7a12e3b",
+        "timestamp": 1793985749550
+      },
+      {
+        "executionId": "83c103f0-8291-4abf-9256-644ddea84ad7",
+        "chatSessionId": "sess_216a33b1-17eb-428b-a3bd-1774b7a12e3b",
+        "timestamp": 1793986137186
+      }
+    ],
+    "8.1 Implement `src/components/SkillRackCard/index.tsx` (static, no animation)": [
+      {
+        "executionId": "83c103f0-8291-4abf-9256-644ddea84ad7",
+        "chatSessionId": "sess_216a33b1-17eb-428b-a3bd-1774b7a12e3b",
+        "timestamp": 1793985749853
+      },
+      {
+        "executionId": "83c103f0-8291-4abf-9256-644ddea84ad7",
+        "chatSessionId": "sess_216a33b1-17eb-428b-a3bd-1774b7a12e3b",
+        "timestamp": 1793986137453
+      }
+    ],
+    "7.2 Implement `src/pages/Architect/index.tsx`": [
+      {
+        "executionId": "83c103f0-8291-4abf-9256-644ddea84ad7",
+        "chatSessionId": "sess_216a33b1-17eb-428b-a3bd-1774b7a12e3b",
+        "timestamp": 1793985753431
+      },
+      {
+        "executionId": "83c103f0-8291-4abf-9256-644ddea84ad7",
+        "chatSessionId": "sess_216a33b1-17eb-428b-a3bd-1774b7a12e3b",
+        "timestamp": 1793986140889
+      }
+    ],
+    "8.2 Implement `src/pages/Superpowers/index.tsx`": [
+      {
+        "executionId": "83c103f0-8291-4abf-9256-644ddea84ad7",
+        "chatSessionId": "sess_216a33b1-17eb-428b-a3bd-1774b7a12e3b",
+        "timestamp": 1793985753662
+      },
+      {
+        "executionId": "83c103f0-8291-4abf-9256-644ddea84ad7",
+        "chatSessionId": "sess_216a33b1-17eb-428b-a3bd-1774b7a12e3b",
+        "timestamp": 1793986141123
+      }
+    ],
+    "7. Architect page — static ServerRackViz component": [
+      {
+        "executionId": "83c103f0-8291-4abf-9256-644ddea84ad7",
+        "chatSessionId": "sess_216a33b1-17eb-428b-a3bd-1774b7a12e3b",
+        "timestamp": 1793986140962
+      }
+    ],
+    "8. Superpowers page — static SkillRackCard component": [
+      {
+        "executionId": "83c103f0-8291-4abf-9256-644ddea84ad7",
+        "chatSessionId": "sess_216a33b1-17eb-428b-a3bd-1774b7a12e3b",
+        "timestamp": 1793986141203
+      }
+    ],
+    "9.1 Implement `src/components/ProjectCard/index.tsx` (static, no animation)": [
+      {
+        "executionId": "7f7ceb37-f8a2-4d5b-bdc2-ac3a6676881e",
+        "chatSessionId": "sess_216a33b1-17eb-428b-a3bd-1774b7a12e3b",
+        "timestamp": 1793986205957
+      },
+      {
+        "executionId": "7f7ceb37-f8a2-4d5b-bdc2-ac3a6676881e",
+        "chatSessionId": "sess_216a33b1-17eb-428b-a3bd-1774b7a12e3b",
+        "timestamp": 1793986433680
+      }
+    ],
+    "10.1 Implement `src/utils/chatMatcher.ts`": [
+      {
+        "executionId": "7f7ceb37-f8a2-4d5b-bdc2-ac3a6676881e",
+        "chatSessionId": "sess_216a33b1-17eb-428b-a3bd-1774b7a12e3b",
+        "timestamp": 1793986206260
+      },
+      {
+        "executionId": "7f7ceb37-f8a2-4d5b-bdc2-ac3a6676881e",
+        "chatSessionId": "sess_216a33b1-17eb-428b-a3bd-1774b7a12e3b",
+        "timestamp": 1793986432687
+      }
+    ],
+    "9.2 Implement `src/pages/Missions/index.tsx`": [
+      {
+        "executionId": "7f7ceb37-f8a2-4d5b-bdc2-ac3a6676881e",
+        "chatSessionId": "sess_216a33b1-17eb-428b-a3bd-1774b7a12e3b",
+        "timestamp": 1793986209818
+      },
+      {
+        "executionId": "7f7ceb37-f8a2-4d5b-bdc2-ac3a6676881e",
+        "chatSessionId": "sess_216a33b1-17eb-428b-a3bd-1774b7a12e3b",
+        "timestamp": 1793986434472
+      }
+    ],
+    "10.2 Implement `src/pages/AskInza/index.tsx` with Terminal UI": [
+      {
+        "executionId": "7f7ceb37-f8a2-4d5b-bdc2-ac3a6676881e",
+        "chatSessionId": "sess_216a33b1-17eb-428b-a3bd-1774b7a12e3b",
+        "timestamp": 1793986210172
+      },
+      {
+        "executionId": "7f7ceb37-f8a2-4d5b-bdc2-ac3a6676881e",
+        "chatSessionId": "sess_216a33b1-17eb-428b-a3bd-1774b7a12e3b",
+        "timestamp": 1793986435444
+      }
+    ],
+    "9. Missions page — static ProjectCard component": [
+      {
+        "executionId": "7f7ceb37-f8a2-4d5b-bdc2-ac3a6676881e",
+        "chatSessionId": "sess_216a33b1-17eb-428b-a3bd-1774b7a12e3b",
+        "timestamp": 1793986434568
+      }
+    ],
+    "10. AskInza page — Terminal, chatMatcher, and command history": [
+      {
+        "executionId": "7f7ceb37-f8a2-4d5b-bdc2-ac3a6676881e",
+        "chatSessionId": "sess_216a33b1-17eb-428b-a3bd-1774b7a12e3b",
+        "timestamp": 1793986435501
+      }
+    ],
+    "11.1 Implement `src/hooks/useGSAP.ts`": [
+      {
+        "executionId": "8eca6118-bb4d-482b-aa04-2d3a8b1df0b8",
+        "chatSessionId": "sess_216a33b1-17eb-428b-a3bd-1774b7a12e3b",
+        "timestamp": 1793986543866
+      },
+      {
+        "executionId": "680fd90f-a4e3-4535-b968-63e835d9a2a2",
+        "chatSessionId": "sess_216a33b1-17eb-428b-a3bd-1774b7a12e3b",
+        "timestamp": 1793988294043
+      },
+      {
+        "executionId": "680fd90f-a4e3-4535-b968-63e835d9a2a2",
+        "chatSessionId": "sess_216a33b1-17eb-428b-a3bd-1774b7a12e3b",
+        "timestamp": 1793988314061
+      }
+    ]
+  }
+}

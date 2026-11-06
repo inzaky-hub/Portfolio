@@ -1,0 +1,257 @@
+{
+  "name": "DIOMANDE Inza Isaak",
+  "role": {
+    "fr": "SOC Analyst · SysAdmin · Cybersécurité & IA",
+    "en": "SOC Analyst · SysAdmin · Cybersecurity & AI"
+  },
+  "tagline": {
+    "fr": "L'humain derrière le code",
+    "en": "The human behind the code"
+  },
+  "biography": {
+    "fr": "Étudiant en Master Sécurité, Cybersécurité et Intelligence Artificielle à l'IDSI / INP-HB (Abidjan), je viens de terminer un stage de 8 mois au SOC de VEONE Groupe (mars–octobre 2026), où j'ai développé une détection comportementale du cryptojacking par Machine Learning intégrée à Wazuh. Auparavant, j'ai été consultant administrateur système junior chez SYNELIA GROUP (CDD, 2023–2024) et stagiaire en audits & réseaux au LABTIC. Je suis passionné par la détection de menaces, l'IA appliquée à la cybersécurité et les compétitions CTF. Je soutiens mon mémoire de Master les 26–27 novembre 2026 et je suis actuellement à la recherche d'un emploi en cybersécurité opérationnelle.",
+    "en": "Master's student in Security, Cybersecurity and Artificial Intelligence at IDSI / INP-HB (Abidjan). I just completed an 8-month SOC internship at VEONE Groupe (March–October 2026), where I built a behavioral cryptojacking detection system using Machine Learning integrated into Wazuh. Previously, I was a junior system administrator consultant at SYNELIA GROUP (fixed-term contract, 2023–2024) and an audits & networks intern at LABTIC. I am passionate about threat detection, AI applied to cybersecurity, and CTF competitions. I defend my Master's thesis on November 26–27, 2026, and I am currently looking for a role in operational cybersecurity."
+  },
+  "skills": [
+    {
+      "category": { "fr": "Langages", "en": "Languages" },
+      "items": [
+        { "name": { "fr": "Python", "en": "Python" }, "level": { "fr": "pratique", "en": "practical" } },
+        { "name": { "fr": "Bash", "en": "Bash" }, "level": { "fr": "pratique", "en": "practical" } },
+        { "name": { "fr": "SQL", "en": "SQL" }, "level": { "fr": "notions", "en": "notions" } }
+      ]
+    },
+    {
+      "category": { "fr": "ML / IA", "en": "ML / AI" },
+      "items": [
+        { "name": { "fr": "LightGBM", "en": "LightGBM" }, "level": { "fr": "pratique", "en": "practical" } },
+        { "name": { "fr": "Machine Learning", "en": "Machine Learning" }, "level": { "fr": "pratique", "en": "practical" } },
+        { "name": { "fr": "Détection comportementale", "en": "Behavioral detection" }, "level": { "fr": "pratique", "en": "practical" } },
+        { "name": { "fr": "Agents IA (OpenClaw, Claude Code, Cline)", "en": "AI agents (OpenClaw, Claude Code, Cline)" }, "level": { "fr": "pratique", "en": "practical" } },
+        { "name": { "fr": "ACP / K-means / Random Forest / XGBoost", "en": "PCA / K-means / Random Forest / XGBoost" }, "level": { "fr": "notions", "en": "notions" } }
+      ]
+    },
+    {
+      "category": { "fr": "Cloud / DevOps", "en": "Cloud / DevOps" },
+      "items": [
+        { "name": { "fr": "Docker", "en": "Docker" }, "level": { "fr": "pratique", "en": "practical" } },
+        { "name": { "fr": "Git / GitLab CI/CD", "en": "Git / GitLab CI/CD" }, "level": { "fr": "pratique", "en": "practical" } },
+        { "name": { "fr": "Ansible", "en": "Ansible" }, "level": { "fr": "pratique", "en": "practical" } },
+        { "name": { "fr": "VMware ESXi", "en": "VMware ESXi" }, "level": { "fr": "pratique", "en": "practical" } },
+        { "name": { "fr": "Kubernetes", "en": "Kubernetes" }, "level": { "fr": "notions (supervision de nœuds)", "en": "notions (node monitoring)" } },
+        { "name": { "fr": "AWS Amplify", "en": "AWS Amplify" }, "level": { "fr": "notions", "en": "notions" } }
+      ]
+    },
+    {
+      "category": { "fr": "Outils sécurité", "en": "Security tools" },
+      "items": [
+        { "name": { "fr": "Wazuh", "en": "Wazuh" }, "level": { "fr": "pratique", "en": "practical" } },
+        { "name": { "fr": "OpenSearch", "en": "OpenSearch" }, "level": { "fr": "pratique", "en": "practical" } },
+        { "name": { "fr": "osquery", "en": "osquery" }, "level": { "fr": "pratique", "en": "practical" } },
+        { "name": { "fr": "Suricata", "en": "Suricata" }, "level": { "fr": "pratique", "en": "practical" } },
+        { "name": { "fr": "Centreon / Nagios", "en": "Centreon / Nagios" }, "level": { "fr": "pratique", "en": "practical" } },
+        { "name": { "fr": "Nessus / Nexpose", "en": "Nessus / Nexpose" }, "level": { "fr": "pratique", "en": "practical" } },
+        { "name": { "fr": "Active Directory / GPO / PKI", "en": "Active Directory / GPO / PKI" }, "level": { "fr": "pratique", "en": "practical" } },
+        { "name": { "fr": "Fortinet (FortiAnalyzer, FortiGate)", "en": "Fortinet (FortiAnalyzer, FortiGate)" }, "level": { "fr": "pratique", "en": "practical" } },
+        { "name": { "fr": "Outils CTF (pwntools, radare2, gdb)", "en": "CTF tools (pwntools, radare2, gdb)" }, "level": { "fr": "pratique", "en": "practical" } }
+      ]
+    },
+    {
+      "category": { "fr": "Bases de données", "en": "Databases" },
+      "items": [
+        { "name": { "fr": "OpenSearch", "en": "OpenSearch" }, "level": { "fr": "pratique", "en": "practical" } },
+        { "name": { "fr": "PostgreSQL / Oracle", "en": "PostgreSQL / Oracle" }, "level": { "fr": "notions", "en": "notions" } }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "pfe-cryptojacking",
+      "featured": true,
+      "title": {
+        "fr": "Détection des attaques de cryptojacking par ML intégré à Wazuh SIEM",
+        "en": "Cryptojacking attack detection via ML integrated into Wazuh SIEM"
+      },
+      "description": {
+        "fr": "PFE de Master. Pipeline LightGBM + osquery + Wazuh, règle Wazuh 100030 (niveau 12, MITRE T1496). Détection en 3 minutes. Mémoire 83 pages.",
+        "en": "Master's final-year project. LightGBM + osquery + Wazuh pipeline, Wazuh rule 100030 (level 12, MITRE T1496). Detection in 3 minutes. 83-page thesis."
+      },
+      "metrics": { "f1": 0.9639, "recall": 0.9756, "auc": 0.9987, "observations": 2341 },
+      "technologies": ["Python", "LightGBM", "Wazuh", "OpenSearch", "osquery", "Docker", "Linux"],
+      "link": "https://github.com/inzaky-hub/Portfolio"
+    },
+    {
+      "id": "pipeline-rapport-soc",
+      "featured": false,
+      "title": {
+        "fr": "Pipeline de rapport de sécurité quotidien (astreinte SOC)",
+        "en": "Daily security report pipeline (SOC on-call)"
+      },
+      "description": {
+        "fr": "Requêtes d'agrégation OpenSearch sur Wazuh, filtrage des règles bruyantes, sous-agrégations par IP source, génération de rapports Word concis.",
+        "en": "OpenSearch aggregation queries on Wazuh, filtering noisy rules, sub-aggregations by source IP, generation of concise Word reports."
+      },
+      "technologies": ["OpenSearch", "Wazuh", "Word"],
+      "link": "https://github.com/inzaky-hub/Portfolio"
+    },
+    {
+      "id": "agent-ctf",
+      "featured": false,
+      "title": {
+        "fr": "Agent autonome de résolution de CTF",
+        "en": "Autonomous CTF solving agent"
+      },
+      "description": {
+        "fr": "Agent qui se connecte à CTFd, liste les challenges, télécharge les fichiers, les résout et soumet les flags, piloté via Telegram.",
+        "en": "Agent that connects to CTFd, lists challenges, downloads files, solves them and submits flags, controlled via Telegram."
+      },
+      "technologies": ["OpenClaw", "Claude Code", "Telegram", "CTFd API"],
+      "link": "https://github.com/inzaky-hub/Portfolio"
+    },
+    {
+      "id": "projet-mdm",
+      "featured": false,
+      "title": { "fr": "Projet MDM", "en": "MDM project" },
+      "description": {
+        "fr": "Solution MDM déployée via Docker (Headwind MDM), testée sur Android Studio AVD.",
+        "en": "MDM solution deployed via Docker (Headwind MDM), tested on Android Studio AVD."
+      },
+      "technologies": ["Headwind MDM", "Docker", "Android Studio AVD"],
+      "link": "https://github.com/inzaky-hub/Portfolio"
+    },
+    {
+      "id": "emat",
+      "featured": false,
+      "title": { "fr": "EMAT", "en": "EMAT" },
+      "description": {
+        "fr": "Application axée sécurité avec Keycloak et JWT.",
+        "en": "Security-focused application with Keycloak and JWT."
+      },
+      "technologies": ["Keycloak", "JWT"],
+      "link": "https://github.com/inzaky-hub/Portfolio"
+    },
+    {
+      "id": "threatclassai",
+      "featured": false,
+      "title": { "fr": "ThreatClassAI", "en": "ThreatClassAI" },
+      "description": {
+        "fr": "Application web interactive pour la classification et la priorisation des événements EDR via ML.",
+        "en": "Interactive web application for classifying and prioritizing EDR events via ML."
+      },
+      "technologies": ["Python", "Machine Learning"],
+      "link": "https://github.com/inzaky-hub/Portfolio"
+    },
+    {
+      "id": "simulation-cheval-troie",
+      "featured": false,
+      "title": { "fr": "Simulation Cheval de Troie", "en": "Trojan Horse Simulation" },
+      "description": {
+        "fr": "Attaque ciblée simulant l'offuscation et la compromission d'entreprise en phase de recrutement.",
+        "en": "Targeted attack simulating obfuscation and corporate compromise during a recruitment phase."
+      },
+      "technologies": ["Sécurité offensive"],
+      "link": "https://github.com/inzaky-hub/Portfolio"
+    },
+    {
+      "id": "osep-snippets",
+      "featured": false,
+      "title": { "fr": "OSEP-Code-Snippets", "en": "OSEP-Code-Snippets" },
+      "description": {
+        "fr": "Développements basés sur le cours PEN-300 d'Offensive Security.",
+        "en": "Developments based on Offensive Security's PEN-300 course."
+      },
+      "technologies": ["Sécurité offensive"],
+      "link": "https://github.com/inzaky-hub/Portfolio"
+    },
+    {
+      "id": "hang-game",
+      "featured": false,
+      "title": { "fr": "Hang Game", "en": "Hang Game" },
+      "description": {
+        "fr": "Jeu interactif de pendu (Python + PySide6).",
+        "en": "Interactive hangman game (Python + PySide6)."
+      },
+      "technologies": ["Python", "PySide6"],
+      "link": "https://github.com/inzaky-hub/Portfolio"
+    }
+  ],
+  "chatResponses": {
+    "presentation": {
+      "keywords": ["présente", "présentation", "qui", "profil", "identité", "present", "who", "profile"],
+      "response": {
+        "fr": "DIOMANDE Inza Isaak, SOC Analyst et administrateur système basé à Abidjan. Master Sécurité, Cybersécurité et IA (IDSI/INP-HB, soutenance 26–27 novembre 2026). Stage SOC de 8 mois chez VEONE Groupe, CDD administrateur système chez SYNELIA GROUP. Passionné par la détection de menaces et l'IA appliquée à la cybersécurité.",
+        "en": "DIOMANDE Inza Isaak, SOC Analyst and system administrator based in Abidjan. Master's in Security, Cybersecurity and AI (IDSI/INP-HB, defense November 26–27, 2026). 8-month SOC internship at VEONE Groupe, fixed-term system administrator contract at SYNELIA GROUP. Passionate about threat detection and AI applied to cybersecurity."
+      }
+    },
+    "projets": {
+      "keywords": ["projet", "projets", "réalisation", "missions", "portfolio", "project", "projects"],
+      "response": {
+        "fr": "Projet phare : détection du cryptojacking par Machine Learning (LightGBM) intégré à Wazuh SIEM — F1=0.9639, AUC=0.9987. Autres projets : pipeline de rapport SOC quotidien, agent autonome de résolution de CTF, projet MDM, EMAT, ThreatClassAI, simulation cheval de Troie, Hang Game. Tous sur github.com/inzaky-hub/Portfolio.",
+        "en": "Flagship project: cryptojacking detection via Machine Learning (LightGBM) integrated into Wazuh SIEM — F1=0.9639, AUC=0.9987. Other projects: daily SOC report pipeline, autonomous CTF solving agent, MDM project, EMAT, ThreatClassAI, Trojan Horse simulation, Hang Game. All on github.com/inzaky-hub/Portfolio."
+      }
+    },
+    "competences": {
+      "keywords": ["compétence", "compétences", "skills", "technologies", "stack", "outils", "skills", "tools"],
+      "response": {
+        "fr": "Langages : Python, Bash, SQL. ML/IA : LightGBM, détection comportementale, agents IA. Cloud/DevOps : Docker, Git, Ansible, VMware, AWS Amplify. Sécurité : Wazuh, OpenSearch, osquery, Suricata, Centreon, Nessus, Active Directory, PKI, Fortinet. BDD : OpenSearch, PostgreSQL/Oracle (notions).",
+        "en": "Languages: Python, Bash, SQL. ML/AI: LightGBM, behavioral detection, AI agents. Cloud/DevOps: Docker, Git, Ansible, VMware, AWS Amplify. Security: Wazuh, OpenSearch, osquery, Suricata, Centreon, Nessus, Active Directory, PKI, Fortinet. Databases: OpenSearch, PostgreSQL/Oracle (notions)."
+      }
+    },
+    "experience": {
+      "keywords": ["expérience", "expériences", "stage", "stages", "veone", "synelia", "labtic", "opnin", "parcours", "experience", "internship", "career"],
+      "response": {
+        "fr": "VEONE Groupe (stage SOC, mars–octobre 2026) : supervision Wazuh/OpenSearch, détection ML du cryptojacking. SYNELIA GROUP (CDD administrateur système junior, 2023–2024) : Centreon, VMware, PowerShell, Bacula, administration Linux/réseau. LABTIC (stage, 2023) : FreeNAS, VLAN, Nagios, Heartbeat. OPNIN (stage, 2023) : Suricata. CNVDT (freelance, 2022) : gestion de base de données.",
+        "en": "VEONE Groupe (SOC internship, March–October 2026): Wazuh/OpenSearch monitoring, ML cryptojacking detection. SYNELIA GROUP (junior system administrator fixed-term contract, 2023–2024): Centreon, VMware, PowerShell, Bacula, Linux/network administration. LABTIC (internship, 2023): FreeNAS, VLAN, Nagios, Heartbeat. OPNIN (internship, 2023): Suricata. CNVDT (freelance, 2022): database management."
+      }
+    },
+    "certifications": {
+      "keywords": ["certification", "certifications", "certif", "diplôme", "diplômes", "degree", "diploma"],
+      "response": {
+        "fr": "Fortinet NSE 1–3, TryHackMe SOC Level 1 / Cyber Security 101 / Pre Security, PortSwigger Web Application Security, CENTRI Blue Team Junior Analyst + Threat Hunting / Vulnerability Management / OSINT / Digital Forensics, Huawei ICT Network Architecture, CPPS (Hack & Fix), ISC2 CC Domain 5. Licence ASSRI mention Bien (Université Polytechnique de Bingerville). Master SCIA en cours de soutenance (26–27 novembre 2026).",
+        "en": "Fortinet NSE 1–3, TryHackMe SOC Level 1 / Cyber Security 101 / Pre Security, PortSwigger Web Application Security, CENTRI Blue Team Junior Analyst + Threat Hunting / Vulnerability Management / OSINT / Digital Forensics, Huawei ICT Network Architecture, CPPS (Hack & Fix), ISC2 CC Domain 5. Bachelor's in ASSRI with honors (Université Polytechnique de Bingerville). Master's in SCIA, defense scheduled November 26–27, 2026."
+      }
+    },
+    "contact": {
+      "keywords": ["contact", "linkedin", "github", "email", "joindre", "recruter", "embaucher", "hire", "recruit"],
+      "response": {
+        "fr": "LinkedIn : linkedin.com/in/diomande-inza-isaak-9384552a1. GitHub : github.com/inzaky-hub/Portfolio. Disponible pour un poste en cybersécurité opérationnelle (SOC, audit, sécurité des infrastructures).",
+        "en": "LinkedIn: linkedin.com/in/diomande-inza-isaak-9384552a1. GitHub: github.com/inzaky-hub/Portfolio. Available for a role in operational cybersecurity (SOC, audit, infrastructure security)."
+      }
+    },
+    "objectifs": {
+      "keywords": ["objectif", "objectifs", "ambition", "carrière", "recherche", "futur", "goal", "goals", "career", "future"],
+      "response": {
+        "fr": "Objectif : évoluer vers un rôle d'expert SI/IA en cybersécurité opérationnelle — SOC, audit de sécurité, sécurité des infrastructures, gouvernance SSI. Approfondir la détection/réponse aux incidents, SIEM, analyse des vulnérabilités, et l'IA appliquée à la cybersécurité.",
+        "en": "Goal: evolve toward an IS/AI expert role in operational cybersecurity — SOC, security audit, infrastructure security, information security governance. Deepen incident detection/response, SIEM, vulnerability analysis, and AI applied to cybersecurity."
+      }
+    },
+    "aws": {
+      "keywords": ["aws", "amplify", "cloud", "amazon"],
+      "response": {
+        "fr": "Ce portfolio est déployé sur AWS Amplify Hosting. Je suis également Group Leader du AWS Student Builder Group à l'INP-HB, où j'anime des sessions pour les étudiants.",
+        "en": "This portfolio is deployed on AWS Amplify Hosting. I am also Group Leader of the AWS Student Builder Group at INP-HB, where I run sessions for students."
+      }
+    },
+    "ctf": {
+      "keywords": ["ctf", "ecowasctf", "cytac", "compétition", "challenge", "competition"],
+      "response": {
+        "fr": "J'ai participé à l'EcowasCTF (exploitation de heap, stéganographie, cryptographie, forensique réseau) et à CYTAC Intelligence (Active Directory, PKI, audit d'annuaire, appel d'offres PCI DSS). J'ai aussi développé un agent autonome de résolution de CTF.",
+        "en": "I participated in EcowasCTF (heap exploitation, steganography, cryptography, network forensics) and CYTAC Intelligence (Active Directory, PKI, directory audit, PCI DSS call for tenders). I also developed an autonomous CTF solving agent."
+      }
+    },
+    "pourquoi": {
+      "keywords": ["pourquoi", "motivation", "passion", "tech", "why"],
+      "response": {
+        "fr": "Je suis attiré par la cybersécurité parce qu'elle combine rigueur technique et impact concret. Ce qui me distingue : un profil hybride SI + IA + Cybersécurité, avec une capacité à construire une chaîne de détection de bout en bout (de la télémétrie osquery jusqu'à l'alerte Wazuh).",
+        "en": "I am drawn to cybersecurity because it combines technical rigor with concrete impact. What sets me apart: a hybrid IS + AI + Cybersecurity profile, with the ability to build an end-to-end detection chain (from osquery telemetry to Wazuh alerting)."
+      }
+    },
+    "fun_fact": {
+      "keywords": ["fun", "anecdote", "curiosité", "loisir", "intérêt", "hobby", "interest"],
+      "response": {
+        "fr": "En dehors de la cybersécurité : investissement boursier sur la BRVM, compétitions CTF, et expérimentation d'outils IA gratuits ou à faible coût pour le développement. Utilisateur Linux Fedora KDE.",
+        "en": "Outside cybersecurity: stock market investing on the BRVM, CTF competitions, and experimenting with free or low-cost AI tools for development. Linux Fedora KDE user."
+      }
+    }
+  }
+}
