@@ -1,3 +1,5 @@
+import { useEffect, useRef } from 'react';
+import { gsap } from '../../hooks/useGSAP';
 import type { Project } from '../../types/profile';
 
 interface ProjectCardProps {
@@ -7,7 +9,8 @@ interface ProjectCardProps {
   reducedMotion: boolean;
 }
 
-const ProjectCard = ({ project, featured, language }: ProjectCardProps) => {
+const ProjectCard = ({ project, featured, language, reducedMotion }: ProjectCardProps) => {
+  const cardRef = useRef<HTMLDivElement>(null);
   const title = language === 'fr' ? project.title.fr : project.title.en;
   const description = language === 'fr' ? project.description.fr : project.description.en;
 
@@ -16,9 +19,48 @@ const ProjectCard = ({ project, featured, language }: ProjectCardProps) => {
   const safeDescription = description.slice(0, 300);
   const safeTags = project.technologies.slice(0, 10);
 
+  useEffect(() => {
+    const cardEl = cardRef.current;
+    if (!cardEl) {
+      console.warn('ProjectCard: card element not found');
+      return;
+    }
+
+    if (reducedMotion) {
+      gsap.set(cardEl, { opacity: 0 });
+      gsap.to(cardEl, {
+        scrollTrigger: {
+          trigger: cardEl,
+          start: 'top 90%',
+        },
+        opacity: 1,
+        duration: 0.3,
+      });
+    } else {
+      gsap.set(cardEl, { opacity: 0, y: 30 });
+      gsap.to(cardEl, {
+        scrollTrigger: {
+          trigger: cardEl,
+          start: 'top 90%',
+        },
+        opacity: 1,
+        y: 0,
+        duration: 0.6, // 600ms duration
+        ease: 'power2.out',
+      });
+    }
+
+    return () => {
+      if (typeof gsap.killTweensOf === 'function' && cardEl) {
+        gsap.killTweensOf(cardEl);
+      }
+    };
+  }, [reducedMotion]);
+
   if (featured) {
     return (
       <div
+        ref={cardRef}
         className={[
           'w-full rounded-2xl border-2 border-[rgba(0,229,255,0.4)] p-8 md:p-10 overflow-hidden',
           'shadow-[0_0_40px_rgba(0,229,255,0.15)] transition-all duration-200',
@@ -113,6 +155,7 @@ const ProjectCard = ({ project, featured, language }: ProjectCardProps) => {
   // Non-featured card
   return (
     <div
+      ref={cardRef}
       className={[
         'bg-[#111827] border border-[rgba(0,229,255,0.2)] rounded-xl p-6 overflow-hidden',
         'transition-all duration-200 flex flex-col justify-between',

@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
+import { gsap } from '../../hooks/useGSAP';
 
 interface SkillItemData {
   name: string;
@@ -13,9 +14,102 @@ interface SkillRackCardProps {
 
 const SkillRackCard = ({ category, items, reducedMotion }: SkillRackCardProps) => {
   const [expanded, setExpanded] = useState(false);
+  const cardRef = useRef<HTMLDivElement>(null);
+  const hasAnimatedRef = useRef(false);
+
+  useEffect(() => {
+    const cardEl = cardRef.current;
+    if (!cardEl) {
+      console.warn('SkillRackCard: card element not found');
+      return;
+    }
+
+    const animate = () => {
+      if (hasAnimatedRef.current) return;
+      hasAnimatedRef.current = true;
+
+      if (!cardEl) {
+        console.warn('SkillRackCard: card element not found');
+        return;
+      }
+
+      if (reducedMotion) {
+        gsap.to(cardEl, {
+          opacity: 1,
+          duration: 0.3,
+        });
+      } else {
+        gsap.to(cardEl, {
+          scale: 1.0,
+          opacity: 1,
+          duration: 0.4,
+          ease: 'power2.out',
+        });
+      }
+    };
+
+    if (reducedMotion) {
+      gsap.set(cardEl, { opacity: 0 });
+    } else {
+      gsap.set(cardEl, { opacity: 0, scale: 0.8 });
+    }
+
+    if (typeof IntersectionObserver === 'undefined') {
+      animate();
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const [entry] = entries;
+        if (entry && (entry.isIntersecting || entry.intersectionRatio >= 0.1)) {
+          observer.disconnect();
+          animate();
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    observer.observe(cardEl);
+
+    return () => {
+      observer.disconnect();
+      if (typeof gsap.killTweensOf === 'function' && cardEl) {
+        gsap.killTweensOf(cardEl);
+      }
+    };
+  }, [reducedMotion]);
+
+  // Hover reveal each skill item: 200ms fade, 80ms stagger
+  const handleMouseEnter = () => {
+    if (reducedMotion || !cardRef.current) return;
+    const itemEls = cardRef.current.querySelectorAll('.skill-item');
+    if (itemEls.length === 0) return;
+    gsap.to(itemEls, {
+      opacity: 1,
+      duration: 0.2,
+      stagger: 0.08,
+      ease: 'power2.out',
+      overwrite: 'auto',
+    });
+  };
+
+  const handleMouseLeave = () => {
+    if (reducedMotion || !cardRef.current || expanded) return;
+    const itemEls = cardRef.current.querySelectorAll('.skill-item');
+    if (itemEls.length === 0) return;
+    gsap.to(itemEls, {
+      opacity: 0,
+      duration: 0.2,
+      overwrite: 'auto',
+    });
+  };
 
   return (
     <div
+      ref={cardRef}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
       className={[
         'bg-[#111827] border border-[rgba(0,229,255,0.2)] rounded-xl p-6 overflow-hidden',
         'transition-all duration-200 group',
@@ -63,16 +157,12 @@ const SkillRackCard = ({ category, items, reducedMotion }: SkillRackCardProps) =
         }}
       >
         <ul className="space-y-1 pt-1" role="list">
-          {items.map((item, i) => (
+          {items.map((item) => (
             <li
               key={item.name}
-              className={[
-                'flex flex-row items-center justify-between py-2 border-b border-white/5 last:border-0',
-                reducedMotion ? 'opacity-100' : 'opacity-0 group-hover:opacity-100',
-              ].join(' ')}
+              className="skill-item flex flex-row items-center justify-between py-2 border-b border-white/5 last:border-0"
               style={{
-                animationDelay: reducedMotion ? '0ms' : `${i * 80}ms`,
-                opacity: expanded ? 1 : undefined,
+                opacity: expanded || reducedMotion ? 1 : 0,
               }}
             >
               <span className="font-sans text-sm text-[#F9FAFB]/90 font-medium">

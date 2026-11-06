@@ -21,7 +21,7 @@ const Missions = () => {
   const featuredProject = profileData.projects.find((p) => p.featured) ?? profileData.projects[0];
   const nonFeatured = profileData.projects.filter((p) => !p.featured);
 
-  // Quick-read: first 2 projects (featured + 1 non-featured)
+  // Quick-read: first 2 projects (featured + 1 non-featured) with title and description
   if (quickReadMode) {
     const preview = [featuredProject, ...nonFeatured].slice(0, 2);
     return (
@@ -33,10 +33,15 @@ const Missions = () => {
         <h2 className="font-sans text-[#F9FAFB] text-2xl md:text-3xl font-bold">
           {language === 'fr' ? 'Projets phares' : 'Flagship projects'}
         </h2>
-        <ul className="font-sans text-sm text-[#F9FAFB]/90 space-y-3 text-center list-none max-w-lg bg-[#111827] p-6 rounded-xl border border-[rgba(0,229,255,0.2)]">
+        <ul className="font-sans text-sm text-[#F9FAFB]/90 space-y-4 text-center list-none max-w-lg bg-[#111827] p-6 rounded-xl border border-[rgba(0,229,255,0.2)]">
           {preview.map((p) => (
-            <li key={p.id}>
-              <span className="text-[#00E5FF] font-semibold">{language === 'fr' ? p.title.fr : p.title.en}</span>
+            <li key={p.id} className="space-y-1">
+              <span className="text-[#00E5FF] font-semibold block">
+                {language === 'fr' ? p.title.fr : p.title.en}
+              </span>
+              <span className="text-[#9CA3AF] text-xs block">
+                {language === 'fr' ? p.description.fr : p.description.en}
+              </span>
             </li>
           ))}
         </ul>

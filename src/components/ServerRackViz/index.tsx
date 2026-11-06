@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
+import { gsap } from '../../hooks/useGSAP';
 
 export interface ServerUnit {
   id: string;
@@ -12,11 +13,68 @@ interface ServerRackVizProps {
   noMilestoneLabel: string;
 }
 
-const ServerRackViz = ({ units, noMilestoneLabel }: ServerRackVizProps) => {
+const ServerRackViz = ({ units, reducedMotion, noMilestoneLabel }: ServerRackVizProps) => {
   const [hoveredId, setHoveredId] = useState<string | null>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const containerEl = containerRef.current;
+    if (!containerEl) {
+      console.warn('ServerRackViz: container element missing');
+      return;
+    }
+
+    // Find and null-check each unit element
+    const validUnits: HTMLElement[] = [];
+    units.forEach((unit) => {
+      const el = containerEl.querySelector<HTMLElement>(`[data-unit-id="${unit.id}"]`);
+      if (!el) {
+        console.warn(`ServerRackViz: element for unit "${unit.id}" not found`);
+      } else {
+        validUnits.push(el);
+      }
+    });
+
+    if (validUnits.length === 0) {
+      console.warn('ServerRackViz: no valid unit elements found to animate');
+      return;
+    }
+
+    if (reducedMotion) {
+      gsap.set(validUnits, { opacity: 0 });
+      gsap.to(validUnits, {
+        scrollTrigger: {
+          trigger: containerEl,
+          start: 'top 80%',
+        },
+        opacity: 1,
+        duration: 0.3,
+      });
+    } else {
+      gsap.set(validUnits, { opacity: 0, y: 40 });
+      gsap.to(validUnits, {
+        scrollTrigger: {
+          trigger: containerEl,
+          start: 'top 80%',
+        },
+        opacity: 1,
+        y: 0,
+        stagger: 0.08, // 80ms stagger interval
+        duration: 0.4, // 400ms duration
+        ease: 'power2.out',
+      });
+    }
+
+    return () => {
+      if (typeof gsap.killTweensOf === 'function') {
+        validUnits.forEach((u) => gsap.killTweensOf(u));
+      }
+    };
+  }, [units, reducedMotion]);
 
   return (
     <div
+      ref={containerRef}
       className="relative flex items-center justify-center p-6 md:p-12 overflow-visible"
       style={{ perspective: '1000px', minWidth: '280px', minHeight: '380px' }}
       aria-label="Server rack visualization"

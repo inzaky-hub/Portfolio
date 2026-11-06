@@ -174,19 +174,19 @@ Build a single-page React/Vite/TypeScript portfolio application that blends a bo
     - CLS guaranteed zero: book min-height already reserved from task 6.1
     - _Implements: Req 2.1, Req 2.2, Req 2.3, Req 2.6, Req 8.2, Req 8.3, Req 8.5, Req 8.6, Req 8.7_
 
-  - [ ] 11.3 Add GSAP stagger animation to `ServerRackViz`
+  - [x] 11.3 Add GSAP stagger animation to `ServerRackViz`
     - `ScrollTrigger` at `start: "top 80%"`: if `reducedMotion` → opacity 0→1 (300ms); else → each unit `translateY 40px→0`, opacity 0→1, stagger 80ms, duration 400ms (ease `power2.out`)
     - Stagger interval 50–200ms; total ≤ (N × 200ms) + 600ms
     - Null-check each unit element; log warning and skip missing targets
     - _Implements: Req 3.3, Req 8.1, Req 8.2, Req 8.3, Req 8.4, Req 8.7_
 
-  - [ ] 11.4 Add GSAP scale-in animation to `SkillRackCard`
+  - [x] 11.4 Add GSAP scale-in animation to `SkillRackCard`
     - `IntersectionObserver` at threshold 0.1: if `reducedMotion` → opacity 0→1 (300ms); else → scale 0.8→1.0, opacity 0→1 (400ms, ease `power2.out`); trigger once per card per page load
     - On hover: reveal each skill item with 200ms fade, 80ms stagger between items
     - Null-check card element; log warning and skip if missing
     - _Implements: Req 4.2, Req 4.3, Req 8.1, Req 8.2, Req 8.3, Req 8.4, Req 8.7_
 
-  - [ ] 11.5 Add GSAP fade+translate animation to `ProjectCard`
+  - [x] 11.5 Add GSAP fade+translate animation to `ProjectCard`
     - `ScrollTrigger` at `start: "top 90%"`: if `reducedMotion` → opacity 0→1 (300ms); else → opacity 0→1, `translateY 30px→0` (600ms, ease `power2.out`)
     - CLS guaranteed zero: card min-height already reserved; translateY uses CSS transform (no layout shift)
     - Null-check card element; log warning and skip if missing
@@ -199,7 +199,7 @@ Build a single-page React/Vite/TypeScript portfolio application that blends a bo
     - Case-insensitive (`input.trim().toLowerCase()`)
     - _Implements: Req 11.2_
 
-  - [ ] 12.2 Implement `src/components/EchoCenter/index.tsx`
+  - [x] 12.2 Implement `src/components/EchoCenter/index.tsx`
     - Props: `collapsed`, `onToggleCollapse`, `history`, `onCommand`, `language`
     - Fixed bottom bar; styled as CLI with monospace font and accent color
     - Collapsed: single-line bar with label "Echo Center"; expanded: shows input field + scrollable command history (last 10)
@@ -212,21 +212,21 @@ Build a single-page React/Vite/TypeScript portfolio application that blends a bo
     - _Implements: Req 11.1, Req 11.2, Req 11.3, Req 11.4, Req 11.5, Req 11.6, Req 11.7, Req 11.8, Req 11.9, Req 11.10_
 
 - [ ] 13. Language toggle component and full i18n wiring
-  - [ ] 13.1 Implement `src/components/LanguageToggle/index.tsx`
+  - [x] 13.1 Implement `src/components/LanguageToggle/index.tsx`
     - Render FR / EN toggle in the `Header`; fixed and visible on every page
     - Clicking a language calls `setLanguage` from `AppContext` → all text updates within 300ms (no page reload)
     - Visually indicate the active language (distinct style for the active option)
     - Tab-focusable, Enter-activatable, visible focus indicator
     - _Implements: Req 12.1, Req 12.2, Req 12.10_
 
-  - [ ] 13.2 Wire language switching across all pages and components
+  - [x] 13.2 Wire language switching across all pages and components
     - Ensure every `tField()` call and `t()` call in all pages and components re-renders when `AppContext.language` changes
     - Verify QuickSummary content updates language within 300ms when `quickReadMode` is active
     - Verify `localStorage` key `'lang'` is written on every `setLanguage` call and read on `AppProvider` init
     - _Implements: Req 12.2, Req 12.3, Req 12.4, Req 12.6, Req 12.9_
 
 - [ ] 14. QuickRead Mode — per-page summaries and scroll offset restoration
-  - [ ] 14.1 Implement per-page `QuickSummary` content for all five pages
+  - [x] 14.1 Implement per-page `QuickSummary` content for all five pages
     - Cover: name + tagline (from `profileData`)
     - Architect: 3 career facts (role + 2 biography extracts)
     - Superpowers: top 5 skill names (first 5 items across categories, resolved to current language)
@@ -236,7 +236,7 @@ Build a single-page React/Vite/TypeScript portfolio application that blends a bo
     - If a page has no QuickSummary, display `t('quickread.noSummary')` fallback
     - _Implements: Req 7.2, Req 7.3, Req 7.7_
 
-  - [ ] 14.2 Wire scroll offset preservation in `AppContext.toggleQuickReadMode`
+  - [x] 14.2 Wire scroll offset preservation in `AppContext.toggleQuickReadMode`
     - On activation: record `window.scrollY` → `savedScrollOffset`
     - On deactivation: `window.scrollTo({ top: savedScrollOffset, behavior: 'instant' })` (within ±10px)
     - Verify `QuickReadToggle` label and active state are correct
