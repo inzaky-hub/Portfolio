@@ -99,3 +99,31 @@ button, a, [role="button"], input {
   z-index: 9999;
   animation: scanline 8s linear infinite;
 }
+
+/* Keyframes for floating book animation */
+@keyframes book-float {
+  0% {
+    transform: translateY(-4px);
+  }
+  100% {
+    transform: translateY(4px);
+  }
+}
+
+.animate-book-float {
+  animation: book-float 4s ease-in-out infinite alternate;
+}
+
+/* Keyframes for ambient glow */
+@keyframes ambient-glow {
+  0% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1.2;
+  }
+}
+
+.animate-ambient-glow {
+  animation: ambient-glow 3s ease-in-out infinite alternate;
+}
