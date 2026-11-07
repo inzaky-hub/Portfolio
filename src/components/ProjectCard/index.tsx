@@ -63,8 +63,8 @@ const ProjectCard = ({ project, featured, language, reducedMotion }: ProjectCard
         ref={cardRef}
         className={[
           'w-full rounded-2xl border-2 border-[rgba(0,229,255,0.4)] p-8 md:p-10 overflow-hidden',
-          'shadow-[0_0_40px_rgba(0,229,255,0.15)] transition-all duration-200',
-          'hover:shadow-[0_0_50px_rgba(0,229,255,0.25)] hover:border-[#00E5FF]',
+          'shadow-[0_0_40px_rgba(0,229,255,0.25)] transition-all duration-200',
+          'hover:shadow-[0_0_60px_rgba(0,229,255,0.4)] hover:border-[#00E5FF]',
         ].join(' ')}
         style={{
           background: 'linear-gradient(135deg, #111827 0%, #1a2332 100%)',

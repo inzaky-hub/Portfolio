@@ -19,7 +19,7 @@ const Missions = () => {
   }
 
   const featuredProject = profileData.projects.find((p) => p.featured) ?? profileData.projects[0];
-  const nonFeatured = profileData.projects.filter((p) => !p.featured);
+  const nonFeatured = profileData.projects.filter((p) => p.id !== featuredProject.id);
 
   // Quick-read: first 2 projects (featured + 1 non-featured) with title and description
   if (quickReadMode) {
@@ -63,7 +63,7 @@ const Missions = () => {
             style={{ fontSize: 'clamp(1.5rem, 4vw, 2.5rem)' }}
           >
             <span className="w-2.5 h-2.5 rounded-full bg-[#00E5FF] shadow-[0_0_10px_#00E5FF] mr-3 inline-block flex-shrink-0" />
-            Chapter 03 — Missions
+            Chapter 03 — The Missions
           </h2>
           <p className="font-sans text-[#9CA3AF] text-sm mt-1">
             {language === 'fr' ? 'Projets techniques & réalisations concrètes' : 'Technical projects & achievements'}

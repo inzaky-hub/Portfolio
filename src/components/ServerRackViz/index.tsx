@@ -11,9 +11,10 @@ interface ServerRackVizProps {
   units: ServerUnit[];
   reducedMotion: boolean;
   noMilestoneLabel: string;
+  pinging?: boolean;
 }
 
-const ServerRackViz = ({ units, reducedMotion, noMilestoneLabel }: ServerRackVizProps) => {
+const ServerRackViz = ({ units, reducedMotion, noMilestoneLabel, pinging = false }: ServerRackVizProps) => {
   const [hoveredId, setHoveredId] = useState<string | null>(null);
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -76,7 +77,7 @@ const ServerRackViz = ({ units, reducedMotion, noMilestoneLabel }: ServerRackViz
     <div
       ref={containerRef}
       className="relative flex items-center justify-center p-6 md:p-12 overflow-visible"
-      style={{ perspective: '1000px', minWidth: '280px', minHeight: '380px' }}
+      style={{ perspective: '800px', minWidth: '280px', minHeight: '380px' }}
       aria-label="Server rack visualization"
     >
       {/* Rack chassis with isometric 3D transform */}
@@ -118,7 +119,9 @@ const ServerRackViz = ({ units, reducedMotion, noMilestoneLabel }: ServerRackViz
                 <div
                   className={[
                     'flex items-center gap-2.5 px-3 py-1.5 rounded-[4px] border transition-all duration-200 cursor-pointer',
-                    isHovered
+                    pinging
+                      ? 'border-[#10B981] shadow-[0_0_20px_#10B981] bg-[#10B981]/25 ring-1 ring-[#10B981]'
+                      : isHovered
                       ? 'border-[#00E5FF] shadow-[0_0_20px_rgba(0,229,255,0.4)] bg-[#111827]'
                       : 'border-[rgba(0,229,255,0.3)] bg-[#111827] shadow-[inset_0_0_10px_rgba(0,229,255,0.1)]',
                   ].join(' ')}

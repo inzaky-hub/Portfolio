@@ -57,15 +57,15 @@ const Superpowers = () => {
             style={{ fontSize: 'clamp(1.5rem, 4vw, 2.5rem)' }}
           >
             <span className="w-2.5 h-2.5 rounded-full bg-[#00E5FF] shadow-[0_0_10px_#00E5FF] mr-3 inline-block flex-shrink-0" />
-            Chapter 02 — Superpowers
+            Chapter 02 — The Superpowers
           </h2>
           <p className="font-sans text-[#9CA3AF] text-sm mt-1">
             {language === 'fr' ? 'Compétences techniques & expertise SOC/Cloud' : 'Technical competencies & SOC/Cloud expertise'}
           </p>
         </div>
 
-        {/* Responsive grid: 1 col < 640px, 2 cols 640–1023px, 3–4 cols ≥ 1024px */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        {/* Responsive grid: 1 col < 640px, 2 cols 640–1023px, 3 cols ≥ 1024px */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {profileData.skills.map((skillCat) => (
             <SkillRackCard
               key={skillCat.category.en}
