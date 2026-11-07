@@ -1,14 +1,13 @@
-import { useNavigate } from 'react-router-dom';
+import { useState } from 'react';
 import { useAppContext } from '../../context/AppContext';
 import { useTranslation } from '../../hooks/useTranslation';
 import BookCover from '../../components/BookCover/index';
+import PointCloud from '../../components/PointCloud/index';
 
 const Cover = () => {
-  const navigate = useNavigate();
   const { profileData, quickReadMode } = useAppContext();
   const { tField, t } = useTranslation();
-
-  const handleEnter = () => navigate('/architect');
+  const [stage, setStage] = useState<'book' | 'cloud'>('book');
 
   // Detect reduced motion
   const reducedMotion =
@@ -44,12 +43,18 @@ const Cover = () => {
     );
   }
 
+  // Stage 2: Interactive 3D Point Cloud reconstructing avatar
+  if (stage === 'cloud') {
+    return <PointCloud />;
+  }
+
+  // Stage 1: Grimoire cover with parallax & particles
   return (
-    <main className="min-h-screen bg-dc-bg pt-20 pb-24 flex items-center justify-center px-8 md:px-16">
+    <main className="min-h-screen bg-dc-bg pt-20 pb-24 flex items-center justify-center px-4 sm:px-8 md:px-16 overflow-hidden">
       <BookCover
         name={profileData.name}
         tagline={tField(profileData.tagline)}
-        onEnter={handleEnter}
+        onEnter={() => setStage('cloud')}
         reducedMotion={reducedMotion}
       />
     </main>
