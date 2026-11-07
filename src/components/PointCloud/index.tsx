@@ -86,7 +86,10 @@ const PointCloud = ({ onComplete }: PointCloudProps) => {
 
     // Load avatar texture
     const textureLoader = new THREE.TextureLoader();
-    textureLoader.load('/avatar.jpg', (texture) => {
+    textureLoader.setCrossOrigin('anonymous');
+    textureLoader.load(
+      '/avatar.jpg',
+      (texture) => {
       // Draw to offscreen canvas 200x250, read pixel data
       const canvas = document.createElement('canvas');
       canvas.width = 200;
@@ -262,6 +265,8 @@ const PointCloud = ({ onComplete }: PointCloudProps) => {
       };
 
       render();
+    }, undefined, (err) => {
+      console.error('PointCloud: failed to load /avatar.jpg', err);
     });
 
     // Cleanup: dispose geometries, materials, renderer on unmount
